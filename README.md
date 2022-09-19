@@ -22,6 +22,8 @@ joblib==1.1.0
 pylint==2.13.7
 pytest==7.1.2
 
+There is an issue with Python 3.9 which is the only version installed on Azure Cloud Shell.
+
 ```
 
 ## Environment
