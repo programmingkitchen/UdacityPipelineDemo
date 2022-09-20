@@ -21,4 +21,7 @@ drg:
 crg:
 	az group create --location eastus2 --name UdacityPipelineDemo-rg-01
 
+pred:
+	./my_predict.sh
+
 all: install lint test
