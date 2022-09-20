@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-PORT=443
+#PORT=443
 #PORT=80
-#PORT=5000
+PORT=5000
 echo "Port: $PORT"
 
 # POST method predict
@@ -27,5 +27,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST http://mlapp-granier-01.azurewebsites.net:$PORT/predict 
+     -X POST http://127.0.0.1:$PORT/predict 
      # TODO: Replace the <yourappname> with your application name 
