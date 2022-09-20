@@ -27,5 +27,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST http://mlapp-granier-01.azurewebsites.net:$PORT/predict 
+     -X POST https://mlapp-granier-01.azurewebsites.net:$PORT/predict 
      # TODO: Replace the <yourappname> with your application name 

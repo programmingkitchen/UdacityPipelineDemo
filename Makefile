@@ -15,4 +15,10 @@ lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
 	pylint --disable=R,C,W1203,bare-except --fail-under=6 app.py
 
+drg:
+	az group delete --name UdacityPipelineDemo-rg-01
+
+crg:
+	az group create --location eastus2 --name UdacityPipelineDemo-rg-01
+
 all: install lint test
